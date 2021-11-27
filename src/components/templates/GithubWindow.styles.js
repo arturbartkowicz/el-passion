@@ -6,7 +6,6 @@ export const Container = styled.div`
   height: 500px;
   border-radius: 15px;
   border: 1px solid #000;
-  background-color: red;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 0px 20px 0px rgba(66, 68, 90, 1);
   box-shadow: 0px 0px 20px 0px rgba(66, 68, 90, 1);
