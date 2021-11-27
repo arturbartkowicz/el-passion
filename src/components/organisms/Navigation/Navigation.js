@@ -4,9 +4,9 @@ function Navigation() {
   return (
     <Nav>
       <WindowButtons>
-        <WindowButton />
-        <WindowButton />
-        <WindowButton />
+        <WindowButton color="red" />
+        <WindowButton color="yellow" />
+        <WindowButton color="green" />
       </WindowButtons>
       <ul>Navigation list</ul>
     </Nav>

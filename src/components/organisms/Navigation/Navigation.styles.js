@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+const handleColorType = (color) => {
+  switch (color) {
+    case "red":
+      return "red";
+    case "yellow":
+      return "yellow";
+    case "green":
+      return "green";
+    default:
+      return "black";
+  }
+};
+
 export const Nav = styled.nav`
   flex: 3;
   background-color: rgba(-18, 7, 34, 0.9);
@@ -14,9 +27,9 @@ export const WindowButtons = styled.div`
 `;
 
 export const WindowButton = styled.div`
-  background-color: red;
+  background-color: ${({ color }) => handleColorType(color)};
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   margin-right: 10px;
 `;
