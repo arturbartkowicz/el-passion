@@ -1,8 +1,11 @@
+import { Container } from "./GithubWindow.styles";
+
 function GithubWindow() {
   return (
-    <div className="container">
+    <Container>
       <p>Github Window</p>
-    </div>
+      <p>sdfn</p>
+    </Container>
   );
 }
 
