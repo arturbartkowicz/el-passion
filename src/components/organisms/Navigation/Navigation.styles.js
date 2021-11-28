@@ -3,11 +3,11 @@ import styled from "styled-components";
 const handleColorType = (color) => {
   switch (color) {
     case "red":
-      return "red";
+      return "#FF605C";
     case "yellow":
-      return "yellow";
+      return "#FFBD44";
     case "green":
-      return "green";
+      return "#00CA4E";
     default:
       return "black";
   }
