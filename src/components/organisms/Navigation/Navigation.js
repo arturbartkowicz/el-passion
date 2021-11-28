@@ -1,4 +1,5 @@
 import { Nav, WindowButtons, WindowButton } from "./Navigation.styles";
+import NavigationList from "../../molecules/NavigationList/NavigationList";
 
 function Navigation() {
   return (
@@ -8,7 +9,7 @@ function Navigation() {
         <WindowButton color="yellow" />
         <WindowButton color="green" />
       </WindowButtons>
-      <ul>Navigation list</ul>
+      <NavigationList />
     </Nav>
   );
 }
