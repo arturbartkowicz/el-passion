@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ListItem = styled.li`
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   color: white;
 `;
