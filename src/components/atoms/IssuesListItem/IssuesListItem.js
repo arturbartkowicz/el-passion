@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { Container, Icon, Button } from "./IssuesListItem.styles";
-import iconStarSelected from "../../../assets/icons/icon-star-selected.svg";
-import iconStar from "../../../assets/icons/icon-star.svg";
+import { useState } from 'react';
+import { Container, Icon, Button } from './IssuesListItem.styles';
+import iconStarSelected from '../../../assets/icons/icon-star-selected.svg';
+import iconStar from '../../../assets/icons/icon-star.svg';
 
 function IssuesListItem({ data }) {
-  const [isSelected, setIsSelected] = useState(false);
+  const [isSelected, setIsSelected] = useState(data.stateChecked);
 
   return (
     <Container>
