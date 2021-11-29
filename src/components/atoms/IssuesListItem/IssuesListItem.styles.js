@@ -7,4 +7,8 @@ export const ListItem = styled.li`
   border-radius: 10px;
   border: 1px solid #c0c0c0;
   background-color: white;
+
+  &:hover {
+    background-color: #e5e4e2;
+  }
 `;
