@@ -1,10 +1,17 @@
-import { ListItem } from "./IssuesListItem.styles";
+import { useState } from "react";
+import { Container, Icon } from "./IssuesListItem.styles";
+import iconStarSelected from "../../../assets/icons/icon-star-selected.svg";
 
 function IssuesListItem({ data }) {
+  const [isSelected, setIsSelected] = useState(false);
+
   return (
-    <ListItem>
+    <Container>
       <p>{data.text}</p>
-    </ListItem>
+      <Icon>
+        <img src={iconStarSelected} alt="Icon" />
+      </Icon>
+    </Container>
   );
 }
 
