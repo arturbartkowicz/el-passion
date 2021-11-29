@@ -1,13 +1,21 @@
-import { List } from "./IssuesList.styles";
-import IssuesListItem from "../../atoms/IssuesListItem/IssuesListItem";
+import { List, Text } from './IssuesList.styles';
+import IssuesListItem from '../../atoms/IssuesListItem/IssuesListItem';
+import _ from 'lodash';
 
 function IssuesList({ data }) {
+  const groupedData = _.values(_.groupBy(data, (item) => item.date));
+
   return (
     <>
       {data.length ? (
         <List>
-          {data.map((item) => (
-            <IssuesListItem key={item.id} data={item} />
+          {groupedData.map((containerByDate) => (
+            <>
+              <Text>{containerByDate[0].date}</Text>
+              {containerByDate.map((item) => (
+                <IssuesListItem key={item.id} data={item} />
+              ))}
+            </>
           ))}
         </List>
       ) : (
