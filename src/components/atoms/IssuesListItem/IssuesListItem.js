@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Icon } from "./IssuesListItem.styles";
+import { Container, Icon, Button } from "./IssuesListItem.styles";
 import iconStarSelected from "../../../assets/icons/icon-star-selected.svg";
 import iconStar from "../../../assets/icons/icon-star.svg";
 
@@ -8,10 +8,12 @@ function IssuesListItem({ data }) {
 
   return (
     <Container>
-      <p>{data.text}</p>
-      <Icon>
-        <img src={isSelected ? iconStarSelected : iconStar} alt="Icon" />
-      </Icon>
+      <Button onClick={() => setIsSelected(!isSelected)}>
+        <p>{data.text}</p>
+        <Icon>
+          <img src={isSelected ? iconStarSelected : iconStar} alt="Icon" />
+        </Icon>
+      </Button>
     </Container>
   );
 }
