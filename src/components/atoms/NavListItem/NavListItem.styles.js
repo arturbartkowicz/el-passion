@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ListItem = styled.li`
   padding-top: 20px;
@@ -7,6 +7,10 @@ export const ListItem = styled.li`
   color: white;
 
   &:hover {
+    background-color: rgba(40, 30, 60);
+  }
+
+  &[selected] {
     background-color: rgba(40, 30, 60);
   }
 `;

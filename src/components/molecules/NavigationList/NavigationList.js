@@ -1,7 +1,12 @@
-import { List } from "./NavigationList.styles";
-import NavListItem from "../../atoms/NavListItem/NavListItem";
+import { useEffect } from 'react';
+import { List } from './NavigationList.styles';
+import NavListItem from '../../atoms/NavListItem/NavListItem';
 
 function NavigationList({ data }) {
+  useEffect(() => {
+    document.querySelector('.sc-jRQBWg').setAttribute('selected', '');
+  }, []);
+
   return (
     <List>
       <NavListItem icon="github" text="All" counter={data.length} />
